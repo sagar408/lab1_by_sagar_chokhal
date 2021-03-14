@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>question no 3</title>
+	<script>
+		function calculator(){
+			var N1=parseFloat(document.getElementById('N1').value);
+			var N2=parseFloat(document.getElementById('N2').value);
+			var oper=document.getElementById('operators').value;
+			if (oper==='+') {
+				document.getElementById('result').value=N1+N2;
+			}
+			if (oper==='-') {
+				document.getElementById('result').value=N1-N2;
+			}
+			if (oper==='*') {
+				document.getElementById('result').value=N1*N2;
+			}
+			if (oper==='/') {
+				document.getElementById('result').value=N1/N2;
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<input type="text" id="N1"><br>
+	<input type="text" id="N2"><br>
+	<select id="operators">
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+	</select>
+     <button onclick="calculator()">=</button>
+	<input type="text" id="result">
+
+
+</body>
+</html>
